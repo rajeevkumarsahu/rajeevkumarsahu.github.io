@@ -1,2 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>raj</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Rajeev kumar" />
+    <meta property="og:description" content="Portfolio Website by Rajeev kumar" />
+    <meta property="og:image"
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="./image/favicon_io/favicon-16x16.png" sizes="16x16" type=".">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <title>Rajeev kumar</title>
+    <link rel="stylesheet" href="style - Copy.css" />
+    <script src="https://kit.fontawesome.com/cb31bfb0c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><i>Rajeev</i>
+                    <h1>
+                        <ul id="sidemenu">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fas fa-times" onclick="closemenu()"></i>
+
+                        </ul>
+                        <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <h1>Hi, I'm <span>Rajeev kumar</span></h1><br>
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="social-icons">
+                <a target="_blank" href="http://www.youtube.com/@ER-Rajeevkumar99/"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a target="_blank" href="https://www.instagram.com/rajeevkumar22202?igsh=YWhwb2N3aGNobGp1/"><i
+                        class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100024193432260&mibextid=ZbWKwL/"><i
+                        class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/rajeev-kumar-a12617197?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/"><i
+                        class="fa-brands fa-github"></i></a>
+                <a target="_blank" href=""><i
+                        class="fab fa-x-naukri"></i></a>
+               <a target="_blank" href="https://www.naukri.com/mnjuser/homepage/"><i class="fab fa-x-naukri"></i></a>
+           
+            </div>
+            <a href="javascript:void(0)" download class="btn btn2">Download Resume</a>
+        </div>
+    </div>
+
+    <!---------------About Section----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-align: justify; padding-top: 20px;"><b>I'm Rajeev kumar is a fullstack developer with
+                        Experience in frontend developer . he has a strong educational Backgound and maltiple
+                        Programming lanuages.</b>
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Html</span></li>
+                            <li><span>Css</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>React js</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>java</span></li>
+                            <li><span>Mysql</span></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Intership</span><br>Ducat India.Pvt.Ltd <br> Ghaziyabad, Delhi (2023-2024) <br>
+                            </li><br>
+
+                            <li><span>B.Tech.Computer Science</span><br>Sam Higginbottom University Of Agriculture,
+                                Technology And Sciences Naini Allahabad Utter pradesh (2019-2023)</li><br>
+
+                            <li><span>Intermediate</span><br>Sri Sunder High School Muktapur Samastipur Bihar</li>
+                            <br>
+
+                            <li><span>10TH</span><br>Sri Sunder High School Muktapur Samastipur Bihar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Portfolio -->
+    
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> rajeevkumar12121@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 XXXXXXXX79</p>
+                   
+                    
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2024 © Rajeevkumarsahu <i class="fas fa-heart"></i>
+                Developer</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'google drive link'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 4000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
